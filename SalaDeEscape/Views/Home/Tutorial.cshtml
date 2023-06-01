@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Tutorial";
+}
+<nav>
+        <img src="img/logo.png" alt="">
+        <ul>
+            <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
+            <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
+            <li> <a href="">Iniciar Juego</a> </li>
+            <li> <a href="">Pistas</a> </li>
+            <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
+        </ul>
+</nav>
+<main id="tutorial">
+    <h1>Tutorial</h1>
+    <section>
+        <div>
+            <img src='@Url.Content("~/img/carta.png")' alt="">
+            <h3>Para arrancar el juego se debe dirigir hacia "Iniciar Juego", eso lo llevara a la ultima habitacion en la que estaba (en caso de no haber jugado nunca seria la 0), una vez aqui se le entregara una pista</h3>
+        </div>
+        <div>
+            <img src='@Url.Content("~/img/lupa.png")' alt="">
+            <h3>Con esta pista se debe buscar la incognita, aquella que te haga pasar de habitacion. Debes usar la cabeza y tu sabiduria para lograr esto.</h3>
+        </div>
+        <div>
+            <img src='@Url.Content("~/img/resolver.png")' alt="">
+            <h3>Una vez conseguido esto, este sera tu pase a la siguiente habitacion, debes completar 5 habitaciones para pasarte el juego.</h3>
+        </div>
+    </section>
+</main>
